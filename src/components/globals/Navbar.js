@@ -21,9 +21,24 @@ export default class Navbar extends Component {
       },
     ],
   }
-  navbarHandler = () => {}
+  navbarHandler = () => {
+    console.log("helloo")
+  }
 
   render() {
-    return <div>navbar content</div>
+    return (
+      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        <Link to="/" className="navbar-brand">
+          <img src={logo} alt="logo" width="50" height="50"/>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={this.navbarHandler}
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+      </nav>
+    )
   }
 }
