@@ -8,8 +8,8 @@ import { FaGulp } from "react-icons/fa"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1>Hello Dog Lovers!</h1>
+    <p>Are you ready to meet your forever friend ?</p>
     <FaGulp />
   </Layout>
 )
