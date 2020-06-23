@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Pup-Up Shop`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Feeling lonely during quarrantine season? Don't fret! Find your perfect companion on our pup-up shop... but don't delay! We'll only be around for a limited time and these puppies can't wait!`,
+    author: `Thomas Zhang`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
