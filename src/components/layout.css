@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+
+:root {
+  --mainBrown: #2d1ef1;
+  --mainYellow: #ff9e09;
+  --mainGrey: #ece8dc;
+  --mainWhite: #fff;
+  --mainDark: #222;
+}
+
+body {
+  background: var(--main);
+  color: var(--mainDark);
+  font-family: "Raleway", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", "Courier New", Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
+}

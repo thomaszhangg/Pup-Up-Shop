@@ -21,8 +21,15 @@ export default class Navbar extends Component {
       },
     ],
   }
+
+  // navbar toggle functionality
   navbarHandler = () => {
-    console.log("helloo")
+    this.state.navbarOpen
+      ? this.setState({ navbarOpen: false, css: "collapse navbar-collapse" })
+      : this.setState({
+          navbarOpen: true,
+          css: "collapse navbar-collapse show",
+        })
   }
 
   render() {
