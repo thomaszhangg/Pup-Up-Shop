@@ -1,8 +1,6 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 
-// wrapper around background image allows us reuse any props that we give BackgroundImage
-
 export default function BackgroundSection({
   img,
   styleClass,

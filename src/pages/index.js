@@ -3,15 +3,15 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundSection from "../components/globals/BackgroundSection"
+import BackgroundSection from "../components/Globals/BackgroundSection"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="regular joe's"
+      title="Pup-up Shop"
+      styleClass="default-background"
     />
   </Layout>
 )
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
 // querying our background image for us
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
+    img: file(relativePath: { eq: "default-background.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
