@@ -8,13 +8,17 @@ export default function Info() {
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              voluptate labore alias natus vel deleniti tempore, aut totam
-              veniam omnis recusandae minima quam ex? Numquam libero asperiores
-              nulla illo cupiditate deleniti voluptate a ut accusamus. Soluta
-              aliquam iste possimus! Eveniet neque corrupti mollitia quia
-              quisquam itaque dolorum repudiandae? Necessitatibus, ullam!
+              Finding Forever Homes For Puppies For 20 Years! Since Pup-Up Shop
+              was founded in 2000, we have been connecting healthy puppies with
+              caring, loving families. Our Breeder Background Check ensures
+              healthy and humane breeding practices…and a healthier, happier
+              puppy for you! Contact us and find your perfect puppy today!
             </p>
+            <Link to="/about/">
+              <button className="btn text-uppercase btn-yellow">
+                About Page
+              </button>
+            </Link>
           </div>
         </div>
       </div>
