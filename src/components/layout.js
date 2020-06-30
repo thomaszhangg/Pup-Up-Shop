@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
- // layout component is displayed with each and every page
+// layout component is displayed with each and every page
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -14,12 +14,15 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
 
-import Navbar from "./globals/Navbar"
+import Navbar from "./Globals/Navbar"
+import Footer from "./Globals/Footer"
 
 const Layout = ({ children }) => (
   <>
     <Navbar />
     {children}
+
+    <Footer />
   </>
 )
 
