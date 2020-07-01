@@ -11,7 +11,7 @@ export default function Info() {
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
               Welcome to Pup-Up Shop! 20 years ago, Thomas Zhang created
-              Greenfield Puppies with the intent to connect healthy puppies with
+              Pup-Up Shop with the intent to connect healthy puppies with
               caring families. Pup-Up shop does not condone Puppy Mills, and we
               strongly discourage against all breeding practices in which the
               health and well-being of innocent dogs and puppies are
