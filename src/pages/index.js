@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
+import Menu from "../components/Home/Menu"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -14,16 +15,36 @@ const IndexPage = ({ data }) => (
       title="Pup-up Shop"
     />
     <Info />
+    <Menu items={data.menu}/>
   </Layout>
 )
 
-// querying our background image for us
+// querying our background image and puppyItems from contentful
+// replace src fragment with gatsby-source-contentful
 export const query = graphql`
   {
     img: file(relativePath: { eq: "default-background.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+
+    menu: allContentfulPuppyItem {
+      edges {
+        node {
+          id
+          description {
+            description
+          }
+          price
+          category
+          image {
+            fixed(width: 70, height: 70) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
         }
       }
     }
