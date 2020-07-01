@@ -42,6 +42,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background: linear-gradient(rgba(225, 158, 9, 0.5), rgba(255, 158, 9, 0.1));
+  /* opacity: 1 !important; */
   background-position: center;
   background-size: cover;
 }
