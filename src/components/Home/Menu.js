@@ -2,6 +2,18 @@ import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-image"
 
+// Filter functionality
+const getCategories = items => {
+  let tempItems = items.map(item => {
+    return item.node.category
+  })
+  // Return unique categories
+  let tempCategories = new Set(tempItems)
+  let categories = Array.from(tempCategories)
+  categories = ["all", ...categories]
+  return categories
+}
+
 export default class Menu extends Component {
   constructor(props) {
     super(props)
@@ -10,6 +22,21 @@ export default class Menu extends Component {
     this.state = {
       items: props.items.edges,
       puppyItems: props.items.edges,
+      categories: getCategories(props.items.edges),
+    }
+  }
+
+  handleItems = category => {
+    let tempItems = [...this.state.items]
+    if (category === "all") {
+      this.setState(() => {
+        return { puppyItems: tempItems }
+      })
+    } else {
+      let items = tempItems.filter(({ node }) => node.category === category)
+      this.setState(() => {
+        return { coffeeItems: items }
+      })
     }
   }
 
@@ -20,6 +47,24 @@ export default class Menu extends Component {
           <div className="container">
             <Title title="Essentials for your pal" />
             {/* categories */}
+            <div className="row mb-5">
+              <div className="col-10 mx-auto text-center">
+                {this.state.categories.map((category, index) => {
+                  return (
+                    <button
+                      type="button"
+                      key={index}
+                      className="btn btn-yellow text-capitalize m-3"
+                      onClick={() => {
+                        this.handleItems(category)
+                      }}
+                    >
+                      {category}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
             {/* items */}
             <div className="row">
               {this.state.puppyItems.map(({ node }) => {
