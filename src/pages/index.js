@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
       title="Pup-up Shop"
     />
     <Info />
-    <Menu items={data.menu}/>
+    <Menu items={data.menu} />
   </Layout>
 )
 
@@ -41,7 +41,7 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 70, height: 70) {
+            fixed(width: 80, height: 80) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
