@@ -35,7 +35,7 @@ export default class Menu extends Component {
     } else {
       let items = tempItems.filter(({ node }) => node.category === category)
       this.setState(() => {
-        return { coffeeItems: items }
+        return { puppyItems: items }
       })
     }
   }
