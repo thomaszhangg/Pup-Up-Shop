@@ -2,7 +2,7 @@
 
 #### Pup-Up-Shop is an online pop-up shop to help you find the perfect forever friend. Feeling alone during quarrantine and need a friend? Not ready to break quarrantine yet? Don't fret, find your forever friend in the comfort of your home!
 
-View live site: (https://pup-up-shop.netlify.app/)
+View live site: https://pup-up-shop.netlify.app/
 
 ## Tech Stack
 
