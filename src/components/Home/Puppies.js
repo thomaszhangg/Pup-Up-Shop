@@ -11,6 +11,7 @@ const getPuppies = graphql`
           id
           title
           price
+          description
           image {
             fluid(maxHeight: 426) {
               src
