@@ -29,7 +29,7 @@ export default function Contact() {
               <input
                 type="text"
                 className="form-control"
-                email="email"
+                name="email"
                 id="email"
                 placeholder="theomas@dog.com"
               />
