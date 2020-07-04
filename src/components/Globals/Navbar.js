@@ -51,7 +51,11 @@ export default class Navbar extends Component {
             {this.state.links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize">
+                  <Link
+                    to={link.path}
+                    className="nav-link text-capitalize"
+                    style={{ fontSize: "1.2rem" }}
+                  >
                     {link.text}
                   </Link>
                 </li>
