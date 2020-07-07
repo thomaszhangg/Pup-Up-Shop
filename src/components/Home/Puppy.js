@@ -15,7 +15,15 @@ export default function Puppy({ puppy }) {
             <small>{puppy.description}</small>
           </p>
 
-          <button className="btn btn-yellow mt-3 text-capitalize">
+          <button
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+            data-item-id={puppy.id}
+            data-item-name={puppy.title}
+            data-item-price={puppy.price}
+            // data-item-description={puppy.description}
+            data-item-image={puppy.image.fluid.src}
+            data-item-url="https://pup-up-shop.netlify.app/"
+          >
             Add to cart
           </button>
         </div>
