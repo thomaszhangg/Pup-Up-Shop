@@ -22,7 +22,7 @@ export default function Puppy({ puppy }) {
             data-item-price={puppy.price}
             // data-item-description={puppy.description}
             data-item-image={puppy.image.fluid.src}
-            data-item-url="https://pup-up-shop.netlify.app/"
+            data-item-url="localhost:8000"
           >
             Add to cart
           </button>
