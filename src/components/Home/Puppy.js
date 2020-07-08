@@ -20,7 +20,7 @@ export default function Puppy({ puppy }) {
             data-item-id={puppy.id}
             data-item-name={puppy.title}
             data-item-price={puppy.price}
-            // data-item-description={puppy.description}
+            data-item-description={puppy.description}
             data-item-image={puppy.image.fluid.src}
             data-item-url="pup-up-shop.netlify.app"
           >
