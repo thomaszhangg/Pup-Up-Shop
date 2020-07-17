@@ -11,6 +11,7 @@ import Contact from "../components/Home/Contact"
 
 
 const IndexPage = ({ data }) => (
+  
   <Layout>
     <SEO title="Home" />
     <BackgroundSection
